@@ -1,0 +1,4 @@
+true / predicted,early_blight,healthy,late_blight
+early_blight,18,0,0
+healthy,0,17,1
+late_blight,2,0,16

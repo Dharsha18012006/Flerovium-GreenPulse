@@ -1,0 +1,514 @@
+{
+  "timestamp_utc": "2026-10-18T02:43:44.664612+00:00",
+  "url": "http://127.0.0.1:8003",
+  "health": {
+    "status": "ok",
+    "architecture": "s390x",
+    "model_file_present": true,
+    "inference_loaded": true,
+    "mode": "private prototype"
+  },
+  "checks": [
+    {
+      "path": "/api/health",
+      "status": 200,
+      "seconds": 0.7887191999980132
+    },
+    {
+      "path": "/api/predict?lang=en",
+      "status": 200,
+      "seconds": 1.0585702999960631
+    },
+    {
+      "path": "/api/predict?lang=ta",
+      "status": 200,
+      "seconds": 0.8316170999969472
+    },
+    {
+      "path": "/api/predict?lang=en",
+      "status": 200,
+      "seconds": 0.7894392000016524
+    },
+    {
+      "path": "/api/predict?lang=ta",
+      "status": 200,
+      "seconds": 0.7912309000021196
+    },
+    {
+      "path": "/api/predict?lang=en",
+      "status": 200,
+      "seconds": 0.7906377000035718
+    },
+    {
+      "path": "/api/predict?lang=ta",
+      "status": 200,
+      "seconds": 0.7889539999960107
+    },
+    {
+      "path": "/api/predict?lang=en",
+      "status": 200,
+      "seconds": 0.7916910999992979
+    },
+    {
+      "path": "/api/predict?lang=ta",
+      "status": 200,
+      "seconds": 0.7911724999939906
+    },
+    {
+      "path": "/api/predict",
+      "status": 422,
+      "seconds": 0.747497000003932
+    },
+    {
+      "path": "/api/predict",
+      "status": 422,
+      "seconds": 1.041381499999261
+    },
+    {
+      "path": "/api/predict",
+      "status": 422,
+      "seconds": 1.1161301999964053
+    },
+    {
+      "path": "/api/predict",
+      "status": 413,
+      "seconds": 3.002798800000164
+    },
+    {
+      "path": "/api/posts",
+      "status": 422,
+      "seconds": 0.8241245999961393
+    },
+    {
+      "path": "/api/listings",
+      "status": 422,
+      "seconds": 1.075791900002514
+    },
+    {
+      "path": "/api/reports",
+      "status": 422,
+      "seconds": 1.0829655999987153
+    },
+    {
+      "path": "/api/care/not-supported",
+      "status": 404,
+      "seconds": 0.5238706000018283
+    },
+    {
+      "path": "/api/care/healthy?lang=xx",
+      "status": 422,
+      "seconds": 1.072695199996815
+    },
+    {
+      "path": "/api/posts",
+      "status": 403,
+      "seconds": 1.1140567999973428
+    },
+    {
+      "path": "/api/posts",
+      "status": 201,
+      "seconds": 0.8286889000009978
+    },
+    {
+      "path": "/api/posts",
+      "status": 200,
+      "seconds": 0.7818196000007447
+    },
+    {
+      "path": "/api/listings",
+      "status": 201,
+      "seconds": 1.1138457999986713
+    },
+    {
+      "path": "/api/listings?q=READINESS%20DEMO%20024337&category=Tools",
+      "status": 200,
+      "seconds": 0.8414979000008316
+    },
+    {
+      "path": "/api/listings?q=readiness-no-matches-xyz",
+      "status": 200,
+      "seconds": 1.0514941000001272
+    },
+    {
+      "path": "/api/signals",
+      "status": 200,
+      "seconds": 1.073253200003819
+    },
+    {
+      "path": "/api/health",
+      "status": 200,
+      "seconds": 1.0383212000015192
+    }
+  ],
+  "predictions": [
+    {
+      "sample": "early_blight",
+      "language": "en",
+      "response": {
+        "label": "early_blight",
+        "score": 0.9826756694245583,
+        "confidence": 0.9826756694245583,
+        "uncertain": false,
+        "message": "Experimental pattern match, not a confirmed diagnosis.",
+        "limitations": "Tomato only; three classes. Other plants and diseases may still receive a high score. Scores are not calibrated probabilities.",
+        "architecture": "s390x",
+        "image_stored": false,
+        "guidance": {
+          "title": "Possible early blight",
+          "steps": [
+            "Keep foliage dry; water at the base and improve airflow.",
+            "Remove affected lower leaves when dry; clean tools afterward.",
+            "Ask a local gardening or agricultural expert to confirm persistent symptoms."
+          ],
+          "explanation": "Early blight is a fungal disease that often starts on older, lower tomato leaves. Similar-looking damage can have other causes.",
+          "symptoms": [
+            "Brown spots may have concentric rings and surrounding yellowing."
+          ],
+          "prevention": [
+            "Space plants for airflow; mulch soil to reduce splashing and water at the base."
+          ],
+          "scope": "Only selected tomato-leaf categories are supported: healthy pattern, early blight and late blight. Other diseases and plants are not reliably recognized.",
+          "notice": "Curated source-grounded guidance, not a diagnosis or a guaranteed cure. Do not select a pesticide or dosage from this result; consult a local agricultural expert.",
+          "uncertainty": "Low confidence: this result is uncertain. Retake a clear photo of one tomato leaf or ask an agricultural expert. No disease-specific advice is inferred from this result.",
+          "translation_review": "Tamil wording awaits human review.",
+          "headings": {
+            "explanation": "What this means",
+            "symptoms": "Visible signs to check",
+            "prevention": "Basic prevention",
+            "steps": "Safe next steps",
+            "references": "References"
+          },
+          "source": "https://extension.umd.edu/resource/early-blight-tomatoes",
+          "references": [
+            {
+              "title": "University of Maryland Extension — Early blight of tomatoes",
+              "url": "https://extension.umd.edu/resource/early-blight-tomatoes"
+            }
+          ],
+          "language": "en",
+          "content_type": "curated",
+          "generated": false,
+          "reviewed_sources_on": "2026-10-17"
+        }
+      },
+      "http_seconds": 1.0585702999960631
+    },
+    {
+      "sample": "early_blight",
+      "language": "ta",
+      "response": {
+        "label": "early_blight",
+        "score": 0.9826756694245583,
+        "confidence": 0.9826756694245583,
+        "uncertain": false,
+        "message": "Experimental pattern match, not a confirmed diagnosis.",
+        "limitations": "Tomato only; three classes. Other plants and diseases may still receive a high score. Scores are not calibrated probabilities.",
+        "architecture": "s390x",
+        "image_stored": false,
+        "guidance": {
+          "title": "ஆரம்ப இலைக்கருகல் இருக்கலாம்",
+          "steps": [
+            "இலைகள் ஈரமாகாமல் அடிப்பகுதியில் நீர் ஊற்றவும். காற்றோட்டத்தை அதிகரிக்கவும்.",
+            "உலர்ந்த நிலையில் பாதிக்கப்பட்ட கீழ் இலைகளை அகற்றி, கருவிகளைச் சுத்தம் செய்யவும்.",
+            "அறிகுறிகள் தொடர்ந்தால் உள்ளூர் தோட்டக்கலை அல்லது வேளாண் நிபுணரிடம் உறுதிப்படுத்தவும்."
+          ],
+          "explanation": "ஆரம்ப இலைக்கருகல் ஒரு பூஞ்சை நோய். இது பெரும்பாலும் தக்காளிச் செடியின் கீழ்ப்பகுதியில் உள்ள பழைய இலைகளில் தொடங்கும். இதே போன்ற பாதிப்புகளுக்கு வேறு காரணங்களும் இருக்கலாம்.",
+          "symptoms": [
+            "பழுப்பு நிறப் புள்ளிகளில் வட்ட வளையங்களும், அவற்றைச் சுற்றி மஞ்சள் நிறமாற்றமும் தோன்றலாம்."
+          ],
+          "prevention": [
+            "காற்றோட்டத்திற்கு இடைவெளி விடவும். மண் தெறிப்பைக் குறைக்க மூடாக்கு இடவும். செடியின் அடியில் நீர் ஊற்றவும்."
+          ],
+          "scope": "தக்காளி இலைகளின் மூன்று வகைகள் மட்டுமே ஆதரிக்கப்படுகின்றன: ஆரோக்கியமான இலை, ஆரம்ப இலைக்கருகல், பின்பருவ இலைக்கருகல். மற்ற நோய்களையும் தாவரங்களையும் நம்பகமாகக் கண்டறிய முடியாது.",
+          "notice": "இது ஆதாரங்களின் அடிப்படையில் தொகுக்கப்பட்ட வழிகாட்டல் மட்டுமே; நோய் உறுதிப்படுத்தலோ குணமாகும் உத்தரவாதமோ அல்ல. இந்த முடிவை மட்டும் வைத்து பூச்சிக்கொல்லி அல்லது அதன் அளவைத் தேர்ந்தெடுக்க வேண்டாம்; உள்ளூர் வேளாண் நிபுணரை அணுகவும்.",
+          "uncertainty": "நம்பகத்தன்மை குறைவு: இந்த முடிவு உறுதியற்றது. ஒரு தக்காளி இலையைத் தெளிவாக மீண்டும் படம் எடுக்கவும் அல்லது வேளாண் நிபுணரை அணுகவும். இந்த முடிவிலிருந்து நோய் சார்ந்த ஆலோசனை வழங்கப்படவில்லை.",
+          "translation_review": "தமிழ் உரைக்கு மனித மதிப்பாய்வு இன்னும் தேவை.",
+          "headings": {
+            "explanation": "இதன் பொருள்",
+            "symptoms": "கவனிக்க வேண்டிய அறிகுறிகள்",
+            "prevention": "அடிப்படைத் தடுப்பு",
+            "steps": "பாதுகாப்பான அடுத்த படிகள்",
+            "references": "ஆதாரங்கள்"
+          },
+          "source": "https://extension.umd.edu/resource/early-blight-tomatoes",
+          "references": [
+            {
+              "title": "University of Maryland Extension — Early blight of tomatoes",
+              "url": "https://extension.umd.edu/resource/early-blight-tomatoes"
+            }
+          ],
+          "language": "ta",
+          "content_type": "curated",
+          "generated": false,
+          "reviewed_sources_on": "2026-10-17"
+        }
+      },
+      "http_seconds": 0.8316170999969472
+    },
+    {
+      "sample": "healthy",
+      "language": "en",
+      "response": {
+        "label": "healthy",
+        "score": 0.9893134588485167,
+        "confidence": 0.9893134588485167,
+        "uncertain": false,
+        "message": "Experimental pattern match, not a confirmed diagnosis.",
+        "limitations": "Tomato only; three classes. Other plants and diseases may still receive a high score. Scores are not calibrated probabilities.",
+        "architecture": "s390x",
+        "image_stored": false,
+        "guidance": {
+          "title": "Healthy-pattern guidance",
+          "steps": [
+            "Keep watering at soil level and check leaves regularly.",
+            "A photo cannot rule out other diseases, pests or nutrient problems."
+          ],
+          "explanation": "A healthy-pattern result means the photo resembles healthy tomato leaves in the training set. It does not prove that the whole plant is healthy.",
+          "symptoms": [
+            "Check for new spots, yellowing or wilting; these need attention even after a healthy-pattern result."
+          ],
+          "prevention": [
+            "Water consistently at soil level and support plants to keep leaves away from soil."
+          ],
+          "scope": "Only selected tomato-leaf categories are supported: healthy pattern, early blight and late blight. Other diseases and plants are not reliably recognized.",
+          "notice": "Curated source-grounded guidance, not a diagnosis or a guaranteed cure. Do not select a pesticide or dosage from this result; consult a local agricultural expert.",
+          "uncertainty": "Low confidence: this result is uncertain. Retake a clear photo of one tomato leaf or ask an agricultural expert. No disease-specific advice is inferred from this result.",
+          "translation_review": "Tamil wording awaits human review.",
+          "headings": {
+            "explanation": "What this means",
+            "symptoms": "Visible signs to check",
+            "prevention": "Basic prevention",
+            "steps": "Safe next steps",
+            "references": "References"
+          },
+          "source": "https://extension.umn.edu/vegetables/growing-tomatoes",
+          "references": [
+            {
+              "title": "University of Minnesota Extension — Growing tomatoes",
+              "url": "https://extension.umn.edu/vegetables/growing-tomatoes"
+            }
+          ],
+          "language": "en",
+          "content_type": "curated",
+          "generated": false,
+          "reviewed_sources_on": "2026-10-17"
+        }
+      },
+      "http_seconds": 0.7894392000016524
+    },
+    {
+      "sample": "healthy",
+      "language": "ta",
+      "response": {
+        "label": "healthy",
+        "score": 0.9893134588485167,
+        "confidence": 0.9893134588485167,
+        "uncertain": false,
+        "message": "Experimental pattern match, not a confirmed diagnosis.",
+        "limitations": "Tomato only; three classes. Other plants and diseases may still receive a high score. Scores are not calibrated probabilities.",
+        "architecture": "s390x",
+        "image_stored": false,
+        "guidance": {
+          "title": "ஆரோக்கியமான இலைக்கான வழிகாட்டல்",
+          "steps": [
+            "மண்ணில் நீர் ஊற்றவும். இலைகளைத் தொடர்ந்து கவனிக்கவும்.",
+            "படத்தை மட்டும் வைத்து மற்ற நோய்கள், பூச்சிகள் அல்லது ஊட்டச்சத்து குறைபாடுகளை நிராகரிக்க முடியாது."
+          ],
+          "explanation": "ஆரோக்கியமான இலை என்ற முடிவு வந்தால், படம் பயிற்சித் தொகுப்பில் உள்ள ஆரோக்கியமான தக்காளி இலைகளை ஒத்துள்ளது என்று பொருள். செடி முழுவதும் ஆரோக்கியமாக இருப்பதை இது உறுதிப்படுத்தாது.",
+          "symptoms": [
+            "புதிய புள்ளிகள், மஞ்சள் நிறமாற்றம் அல்லது வாடுதல் உள்ளதா என்று கவனிக்கவும். ஆரோக்கியமான இலை என்ற முடிவு வந்தாலும் இவற்றைக் கவனிக்க வேண்டும்."
+          ],
+          "prevention": [
+            "மண்ணில் சீராக நீர் ஊற்றவும். இலைகள் மண்ணைத் தொடாமல் செடிக்கு ஆதரவு அளிக்கவும்."
+          ],
+          "scope": "தக்காளி இலைகளின் மூன்று வகைகள் மட்டுமே ஆதரிக்கப்படுகின்றன: ஆரோக்கியமான இலை, ஆரம்ப இலைக்கருகல், பின்பருவ இலைக்கருகல். மற்ற நோய்களையும் தாவரங்களையும் நம்பகமாகக் கண்டறிய முடியாது.",
+          "notice": "இது ஆதாரங்களின் அடிப்படையில் தொகுக்கப்பட்ட வழிகாட்டல் மட்டுமே; நோய் உறுதிப்படுத்தலோ குணமாகும் உத்தரவாதமோ அல்ல. இந்த முடிவை மட்டும் வைத்து பூச்சிக்கொல்லி அல்லது அதன் அளவைத் தேர்ந்தெடுக்க வேண்டாம்; உள்ளூர் வேளாண் நிபுணரை அணுகவும்.",
+          "uncertainty": "நம்பகத்தன்மை குறைவு: இந்த முடிவு உறுதியற்றது. ஒரு தக்காளி இலையைத் தெளிவாக மீண்டும் படம் எடுக்கவும் அல்லது வேளாண் நிபுணரை அணுகவும். இந்த முடிவிலிருந்து நோய் சார்ந்த ஆலோசனை வழங்கப்படவில்லை.",
+          "translation_review": "தமிழ் உரைக்கு மனித மதிப்பாய்வு இன்னும் தேவை.",
+          "headings": {
+            "explanation": "இதன் பொருள்",
+            "symptoms": "கவனிக்க வேண்டிய அறிகுறிகள்",
+            "prevention": "அடிப்படைத் தடுப்பு",
+            "steps": "பாதுகாப்பான அடுத்த படிகள்",
+            "references": "ஆதாரங்கள்"
+          },
+          "source": "https://extension.umn.edu/vegetables/growing-tomatoes",
+          "references": [
+            {
+              "title": "University of Minnesota Extension — Growing tomatoes",
+              "url": "https://extension.umn.edu/vegetables/growing-tomatoes"
+            }
+          ],
+          "language": "ta",
+          "content_type": "curated",
+          "generated": false,
+          "reviewed_sources_on": "2026-10-17"
+        }
+      },
+      "http_seconds": 0.7912309000021196
+    },
+    {
+      "sample": "late_blight",
+      "language": "en",
+      "response": {
+        "label": "late_blight",
+        "score": 0.8199955301763429,
+        "confidence": 0.8199955301763429,
+        "uncertain": false,
+        "message": "Experimental pattern match, not a confirmed diagnosis.",
+        "limitations": "Tomato only; three classes. Other plants and diseases may still receive a high score. Scores are not calibrated probabilities.",
+        "architecture": "s390x",
+        "image_stored": false,
+        "guidance": {
+          "title": "Possible late blight — prompt expert review",
+          "steps": [
+            "Avoid moving affected plants or wet foliage between gardens.",
+            "Contact a local agricultural expert promptly; similar symptoms need confirmation.",
+            "Keep leaves dry. Do not choose a pesticide from this prediction alone."
+          ],
+          "explanation": "Late blight is caused by a fungus-like water mold and can progress rapidly in cool, wet conditions. A photo match needs expert confirmation.",
+          "symptoms": [
+            "Dark, water-soaked patches can expand on leaves or stems; white fuzzy growth may appear beneath leaves in damp conditions."
+          ],
+          "prevention": [
+            "Avoid overhead watering and crowded plants. Ask locally about suitable resistant varieties."
+          ],
+          "scope": "Only selected tomato-leaf categories are supported: healthy pattern, early blight and late blight. Other diseases and plants are not reliably recognized.",
+          "notice": "Curated source-grounded guidance, not a diagnosis or a guaranteed cure. Do not select a pesticide or dosage from this result; consult a local agricultural expert.",
+          "uncertainty": "Low confidence: this result is uncertain. Retake a clear photo of one tomato leaf or ask an agricultural expert. No disease-specific advice is inferred from this result.",
+          "translation_review": "Tamil wording awaits human review.",
+          "headings": {
+            "explanation": "What this means",
+            "symptoms": "Visible signs to check",
+            "prevention": "Basic prevention",
+            "steps": "Safe next steps",
+            "references": "References"
+          },
+          "source": "https://extension.umd.edu/resource/late-blight-tomato-and-potato",
+          "references": [
+            {
+              "title": "University of Maryland Extension — Late blight of tomato and potato",
+              "url": "https://extension.umd.edu/resource/late-blight-tomato-and-potato"
+            }
+          ],
+          "language": "en",
+          "content_type": "curated",
+          "generated": false,
+          "reviewed_sources_on": "2026-10-17"
+        }
+      },
+      "http_seconds": 0.7906377000035718
+    },
+    {
+      "sample": "late_blight",
+      "language": "ta",
+      "response": {
+        "label": "late_blight",
+        "score": 0.8199955301763429,
+        "confidence": 0.8199955301763429,
+        "uncertain": false,
+        "message": "Experimental pattern match, not a confirmed diagnosis.",
+        "limitations": "Tomato only; three classes. Other plants and diseases may still receive a high score. Scores are not calibrated probabilities.",
+        "architecture": "s390x",
+        "image_stored": false,
+        "guidance": {
+          "title": "பின்பருவ இலைக்கருகல் இருக்கலாம் — விரைவில் நிபுணரை அணுகவும்",
+          "steps": [
+            "பாதிக்கப்பட்ட செடிகள் அல்லது ஈரமான இலைகளை மற்ற தோட்டங்களுக்கு எடுத்துச் செல்ல வேண்டாம்.",
+            "அறிகுறிகளை உறுதிப்படுத்த உள்ளூர் வேளாண் நிபுணரை விரைவில் அணுகவும்.",
+            "இலைகளை உலர்வாக வைத்திருக்கவும். இந்தக் கணிப்பை மட்டும் வைத்து பூச்சிக்கொல்லியைத் தேர்ந்தெடுக்க வேண்டாம்."
+          ],
+          "explanation": "பின்பருவ இலைக்கருகல் பூஞ்சை போன்ற நீர்ப்பூஞ்சையால் ஏற்படுகிறது. குளிர்ந்த, ஈரமான சூழலில் விரைவாகப் பரவலாம். படத்தின் முடிவை நிபுணரிடம் உறுதிப்படுத்த வேண்டும்.",
+          "symptoms": [
+            "இலைகள் அல்லது தண்டுகளில் நீரில் நனைந்தது போன்ற கருமையான திட்டுகள் பெரிதாகலாம். ஈரமான சூழலில் இலைகளின் அடியில் வெள்ளைப் பஞ்சு போன்ற வளர்ச்சி தோன்றலாம்."
+          ],
+          "prevention": [
+            "இலைகளின் மேல் நீர் தெளிப்பதையும் செடிகளை நெருக்கமாக நடுவதையும் தவிர்க்கவும். பொருத்தமான நோய் எதிர்ப்பு ரகங்களைப் பற்றி உள்ளூர் நிபுணரிடம் கேட்கவும்."
+          ],
+          "scope": "தக்காளி இலைகளின் மூன்று வகைகள் மட்டுமே ஆதரிக்கப்படுகின்றன: ஆரோக்கியமான இலை, ஆரம்ப இலைக்கருகல், பின்பருவ இலைக்கருகல். மற்ற நோய்களையும் தாவரங்களையும் நம்பகமாகக் கண்டறிய முடியாது.",
+          "notice": "இது ஆதாரங்களின் அடிப்படையில் தொகுக்கப்பட்ட வழிகாட்டல் மட்டுமே; நோய் உறுதிப்படுத்தலோ குணமாகும் உத்தரவாதமோ அல்ல. இந்த முடிவை மட்டும் வைத்து பூச்சிக்கொல்லி அல்லது அதன் அளவைத் தேர்ந்தெடுக்க வேண்டாம்; உள்ளூர் வேளாண் நிபுணரை அணுகவும்.",
+          "uncertainty": "நம்பகத்தன்மை குறைவு: இந்த முடிவு உறுதியற்றது. ஒரு தக்காளி இலையைத் தெளிவாக மீண்டும் படம் எடுக்கவும் அல்லது வேளாண் நிபுணரை அணுகவும். இந்த முடிவிலிருந்து நோய் சார்ந்த ஆலோசனை வழங்கப்படவில்லை.",
+          "translation_review": "தமிழ் உரைக்கு மனித மதிப்பாய்வு இன்னும் தேவை.",
+          "headings": {
+            "explanation": "இதன் பொருள்",
+            "symptoms": "கவனிக்க வேண்டிய அறிகுறிகள்",
+            "prevention": "அடிப்படைத் தடுப்பு",
+            "steps": "பாதுகாப்பான அடுத்த படிகள்",
+            "references": "ஆதாரங்கள்"
+          },
+          "source": "https://extension.umd.edu/resource/late-blight-tomato-and-potato",
+          "references": [
+            {
+              "title": "University of Maryland Extension — Late blight of tomato and potato",
+              "url": "https://extension.umd.edu/resource/late-blight-tomato-and-potato"
+            }
+          ],
+          "language": "ta",
+          "content_type": "curated",
+          "generated": false,
+          "reviewed_sources_on": "2026-10-17"
+        }
+      },
+      "http_seconds": 0.7889539999960107
+    },
+    {
+      "sample": "uncertain",
+      "language": "en",
+      "response": {
+        "label": "early_blight",
+        "score": 0.4895049175975589,
+        "confidence": 0.4895049175975589,
+        "uncertain": true,
+        "message": "Uncertain: retake a clear single tomato-leaf photo or ask an expert.",
+        "limitations": "Tomato only; three classes. Other plants and diseases may still receive a high score. Scores are not calibrated probabilities.",
+        "architecture": "s390x",
+        "image_stored": false,
+        "guidance": null
+      },
+      "http_seconds": 0.7916910999992979
+    },
+    {
+      "sample": "uncertain",
+      "language": "ta",
+      "response": {
+        "label": "early_blight",
+        "score": 0.4895049175975589,
+        "confidence": 0.4895049175975589,
+        "uncertain": true,
+        "message": "Uncertain: retake a clear single tomato-leaf photo or ask an expert.",
+        "limitations": "Tomato only; three classes. Other plants and diseases may still receive a high score. Scores are not calibrated probabilities.",
+        "architecture": "s390x",
+        "image_stored": false,
+        "guidance": null
+      },
+      "http_seconds": 0.7911724999939906
+    }
+  ],
+  "signals": {
+    "signals": [
+      {
+        "area": "Other urban gardens",
+        "condition": "early_blight",
+        "simulated": 1,
+        "reports": 5,
+        "first_date": "2026-10-17",
+        "last_date": "2026-10-17"
+      }
+    ],
+    "minimum_reports": 5,
+    "window_days": 7,
+    "timezone": "UTC",
+    "notice": "Unverified submissions over 7 days, not unique gardens or outbreak predictions. Small groups are hidden; repeat reports can inflate counts."
+  },
+  "created_test_ids": {
+    "post": 5,
+    "listing": 6
+  },
+  "http_latency": {
+    "requests": 8,
+    "median_seconds": 0.7912016999980551,
+    "max_seconds": 1.0585702999960631,
+    "scope": "Sequential Windows urllib requests through SSH and proxy, including upload/network/HTTP, model already warm; not model-only latency."
+  },
+  "limitations": "Small sequential smoke run, not a load or uptime guarantee. Created records explicitly marked DEMO."
+}

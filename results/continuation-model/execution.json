@@ -1,0 +1,54 @@
+{
+  "architecture": "s390x",
+  "platform": "Linux-6.8.0-147-generic-s390x-with-glibc2.39",
+  "python": "3.12.15",
+  "scikit_learn": "1.9.0",
+  "verified_at_utc": "2026-10-17T18:27:18.384224+00:00",
+  "model_sha256": "e8b84cbdd83a6647b9f2538a39f5d73d3dbd0213293912283f11b42259bd995c",
+  "manifest_sha256": "4a2c4a5d75648518e1e9a183b27d0d41788f643652cbf89249fe4c4b6f61022e",
+  "training_metadata": {
+    "kind": "svm",
+    "labels": [
+      "early_blight",
+      "healthy",
+      "late_blight"
+    ],
+    "threshold": 0.75,
+    "threshold_basis": "Fixed cautious heuristic; not a validated confidence threshold",
+    "architecture": "s390x",
+    "platform": "Linux-6.8.0-147-generic-s390x-with-glibc2.39",
+    "python": "3.12.15",
+    "trained_at_utc": "2026-10-17T16:26:46.897404+00:00",
+    "elapsed_seconds": 4.30400824546814,
+    "trained_from_scratch": true,
+    "pretrained_weights": false,
+    "features": "Original 560-dimensional color, spatial moments, LBP and gradient descriptor",
+    "manifest_sha256": "4a2c4a5d75648518e1e9a183b27d0d41788f643652cbf89249fe4c4b6f61022e",
+    "model_sha256": "e8b84cbdd83a6647b9f2538a39f5d73d3dbd0213293912283f11b42259bd995c",
+    "provenance": {
+      "verified": true,
+      "source_url": "https://github.com/spMohanty/PlantVillage-Dataset",
+      "source_commit": "7f7ecc7e1eaca78107e3affe7cb5abd9427e139a",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://huggingface.co/datasets/mohanty/PlantVillage/blob/main/README.md",
+      "verified_by": "GreenPulse automated git-blob byte verification against original repository; original leaf-map IDs",
+      "leaf_group_source": "https://raw.githubusercontent.com/spMohanty/PlantVillage-Dataset/7f7ecc7e1eaca78107e3affe7cb5abd9427e139a/leaf-map.json",
+      "verified_at_utc": "2026-10-17T16:26:27.118184+00:00",
+      "original_images_byte_verified": 360,
+      "accepted_images": 360,
+      "class_counts": {
+        "early_blight": 120,
+        "late_blight": 120,
+        "healthy": 120
+      },
+      "excluded_unmapped": [],
+      "no_source_images_changed": true
+    },
+    "counts": {
+      "train": 416,
+      "val": 90,
+      "test": 54
+    },
+    "selected_C": 10
+  }
+}

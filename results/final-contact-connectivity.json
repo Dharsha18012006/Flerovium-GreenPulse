@@ -1,0 +1,36 @@
+[
+  {
+    "path": "/",
+    "status": 200,
+    "bytes": 7828
+  },
+  {
+    "path": "/static/app.js",
+    "status": 200,
+    "bytes": 10394
+  },
+  {
+    "path": "/static/guidance.js",
+    "status": 200,
+    "bytes": 2780
+  },
+  {
+    "case": "invalid consent/email rejected",
+    "status": 422
+  },
+  {
+    "case": "invalid consent/email rejected",
+    "status": 422
+  },
+  {
+    "case": "invalid consent/email rejected",
+    "status": 422
+  },
+  {
+    "case": "previous consented DEMO contact persists; unconsented email hidden",
+    "passed": true,
+    "ids": [
+      5
+    ]
+  }
+]

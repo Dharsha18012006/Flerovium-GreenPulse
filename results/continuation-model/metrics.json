@@ -1,0 +1,79 @@
+{
+  "accuracy": 0.9444444444444444,
+  "macro_f1": 0.9443609022556391,
+  "confusion_matrix": [
+    [
+      18,
+      0,
+      0
+    ],
+    [
+      0,
+      17,
+      1
+    ],
+    [
+      2,
+      0,
+      16
+    ]
+  ],
+  "labels": [
+    "early_blight",
+    "healthy",
+    "late_blight"
+  ],
+  "test_images": 54,
+  "per_class": {
+    "early_blight": {
+      "precision": 0.9,
+      "recall": 1.0,
+      "f1-score": 0.9473684210526315,
+      "support": 18.0
+    },
+    "healthy": {
+      "precision": 1.0,
+      "recall": 0.9444444444444444,
+      "f1-score": 0.9714285714285714,
+      "support": 18.0
+    },
+    "late_blight": {
+      "precision": 0.9411764705882353,
+      "recall": 0.8888888888888888,
+      "f1-score": 0.9142857142857143,
+      "support": 18.0
+    },
+    "accuracy": 0.9444444444444444,
+    "macro avg": {
+      "precision": 0.9470588235294116,
+      "recall": 0.9444444444444443,
+      "f1-score": 0.9443609022556391,
+      "support": 54.0
+    },
+    "weighted avg": {
+      "precision": 0.9470588235294117,
+      "recall": 0.9444444444444444,
+      "f1-score": 0.944360902255639,
+      "support": 54.0
+    }
+  },
+  "split_class_counts": {
+    "train": {
+      "early_blight": 171,
+      "healthy": 119,
+      "late_blight": 126
+    },
+    "val": {
+      "early_blight": 38,
+      "healthy": 26,
+      "late_blight": 26
+    },
+    "test": {
+      "early_blight": 18,
+      "healthy": 18,
+      "late_blight": 18
+    }
+  },
+  "methodology": "Verification of frozen model on its existing final holdout; no retraining, tuning, or new independent evaluation.",
+  "limitations": "Small controlled-background PlantVillage test. Unsupported species/diseases are not reliably detected; confidence scores are not calibrated."
+}

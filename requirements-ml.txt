@@ -1,0 +1,4 @@
+# On IBM LinuxONE reuse the existing IBM packages; do not blindly replace them.
+scikit-learn>=1.7,<2
+joblib>=1.4,<2
+# TensorFlow is needed only for the retained baseline CNN, not final SVM inference.
