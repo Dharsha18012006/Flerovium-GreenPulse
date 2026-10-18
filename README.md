@@ -59,4 +59,4 @@ Photos are processed in memory. Community information is user-generated; seller 
 
 ## Originality and credits
 
-Project-specific code and selected weights were created during the Datathon; no prior college source/model was reused in this work. AI coding assistance was used; organizer clarification remains pending, not assumed approved or prohibited. Data/library/care credits are in SOURCES.md. No measured yield, adoption or treatment-impact claims are made.
+Project-specific code and selected weights were created during the Datathon; no prior college source/model was reused in this work. AI coding assistance was used. Data/library/care credits are in SOURCES.md. No measured yield, adoption or treatment-impact claims are made.
